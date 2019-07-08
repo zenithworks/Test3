@@ -1,0 +1,24 @@
+resources:
+ pipelines:
+   - pipeline: P1
+     source: jainamanjain.Test2
+
+trigger:
+- master
+
+stages:
+ - stage: ProduceArtifact
+   jobs:
+     - job: J3
+       pool: 
+        name: Default
+       steps:
+         - download: foobar
+           artifact: A1
+         - task: PublishBuildArtifacts@1
+           inputs:
+            PathtoPublish: 'artifact1'
+            ArtifactName: 'A3'
+            publishLocation: 'Container'
+         - powershell: |
+            ls $(Build.ArtifactStagingDirectory)/
