@@ -13,12 +13,12 @@ stages:
        pool: 
         name: Default
        steps:
-         - download: foobar
+         - download: P1
            artifact: A1
-         - task: PublishBuildArtifacts@1
-           inputs:
-            PathtoPublish: 'artifact1'
-            ArtifactName: 'A3'
-            publishLocation: 'Container'
+        #  - task: PublishBuildArtifacts@1
+        #    inputs:
+        #     PathtoPublish: 'artifact1'
+        #     ArtifactName: 'A3'
+        #     publishLocation: 'Container'
          - powershell: |
             ls $(Build.ArtifactStagingDirectory)/
