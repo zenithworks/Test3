@@ -15,11 +15,11 @@ stages:
         name: Default
        steps:
          - download: P1
-          #  artifact: A1.1
-        #  - task: PublishBuildArtifacts@1
-        #    inputs:
-        #     PathtoPublish: 'artifact1'
-        #     ArtifactName: 'A3'
-        #     publishLocation: 'Container'
+           artifact: A1.1
+         - task: PublishBuildArtifacts@1
+           inputs:
+            PathtoPublish: 'artifactProject2'
+            ArtifactName: 'A_Project2'
+            publishLocation: 'Container'
          - powershell: |
             ls $(Build.ArtifactStagingDirectory)/
