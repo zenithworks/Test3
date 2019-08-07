@@ -18,8 +18,8 @@ stages:
            artifact: A1.1
          - task: PublishBuildArtifacts@1
            inputs:
-            PathtoPublish: 'artifactProject2'
-            ArtifactName: 'A_Project2'
+            PathtoPublish: 'artifact3'
+            ArtifactName: 'A3_Project2'
             publishLocation: 'Container'
          - powershell: |
             ls $(Build.ArtifactStagingDirectory)/
