@@ -15,7 +15,7 @@ stages:
         name: Default
        steps:
          - download: P1
-          #  artifact: A1.1
+           artifact: A1.1
          - task: PublishBuildArtifacts@1
            inputs:
             PathtoPublish: 'artifact3'
