@@ -2,7 +2,7 @@ resources:
  pipelines:
    - pipeline: P1
      source: jainamanjain.Test2
-    #  project: project1
+     project: project1
 
 trigger:
 - master
@@ -18,7 +18,7 @@ stages:
           deploy:
             steps:
               - download: P1
-              #   # artifact: A1.1
+                artifact: A1.1
               # - task: PublishBuildArtifacts@1
               #   inputs:
               #     PathtoPublish: 'artifact3'
