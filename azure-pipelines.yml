@@ -1,8 +1,8 @@
 resources:
  pipelines:
    - pipeline: P1
-     source: jainamanjain.Test2
-     project: project1
+     source: RoshanKumarMicrosoft.Test2
+     # project: project1
 
 trigger:
 - master
