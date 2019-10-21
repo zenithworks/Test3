@@ -35,5 +35,5 @@ stages:
     #         PathtoPublish: 'artifact3'
     #         ArtifactName: 'A3_Project2'
     #         publishLocation: 'Container'
-        #  - powershell: |
+        #  -  powershell: |
         #     ls $(Build.ArtifactStagingDirectory)/
