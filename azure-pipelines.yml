@@ -1,7 +1,7 @@
 resources:
  pipelines:
    - pipeline: P1
-     source: RoshanKumarMicrosoft.Test2
+     source: raimdtu.Test2
      #  project: project1
 
 trigger:
