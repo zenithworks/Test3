@@ -2,6 +2,8 @@ resources:
  pipelines:
    - pipeline: P1
      source: raimdtu.Test2
+   - pipeline: P2
+     source: raimdtu.Test2 (1)
      # project: project1
 
 trigger:
@@ -28,7 +30,7 @@ stages:
         runOnce:
           deploy:
             steps:
-              - download: P1
+              - download: P2
                 artifact: A1.2
               # - task: PublishBuildArtifacts@1
               #   inputs:
