@@ -19,6 +19,8 @@ stages:
             steps:
               - download: P1
                 artifact: A1.1
+              - download: P1
+                artifact: A1.2
               # - task: PublishBuildArtifacts@1
               #   inputs:
               #     PathtoPublish: 'artifact3'
