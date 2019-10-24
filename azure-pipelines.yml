@@ -4,7 +4,7 @@ resources:
      source: raimdtu.Test2
    - pipeline: P2
      source: raimdtu.Test2 (1)
-     # project: project1
+     # project:  project1
 
 trigger:
 - master
