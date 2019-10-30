@@ -1,0 +1,22 @@
+resources:
+ pipelines:
+   - pipeline: P1
+     source: publish_artifact_pipeline
+     trigger: true
+
+
+
+stages:
+ - stage: ProduceArtifact
+   jobs:
+     - deployment: deploymentJob4
+       environment: traceabilityEnv
+       pool: Default
+       strategy:
+        runOnce:
+          deploy:
+            steps:
+              - download: P1
+                artifact: A1.1
+              - download: P1
+                artifact: A1.2
